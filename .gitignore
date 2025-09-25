@@ -1,0 +1,7 @@
+_mirror/
+public/
+.hugo_build.lock
+.venv/
+resources/
+node_modules/
+*.log

@@ -1,0 +1,32 @@
+/* Minimal styles to make imported Elementor content readable */
+.post-content .elementor { --gap: 1.25rem; }
+.post-content .elementor .e-con-inner { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+.post-content .elementor .e-con { margin: 0 auto; }
+.post-content .elementor h1,
+.post-content .elementor h2,
+.post-content .elementor h3,
+.post-content .elementor h4 { margin: 0.5rem 0 0.75rem; line-height: 1.2; }
+.post-content .elementor h1 { font-size: clamp(1.8rem, 2.8vw, 2.4rem); }
+.post-content .elementor h2 { font-size: clamp(1.4rem, 2.2vw, 1.8rem); color: var(--primary); }
+.post-content .elementor p { margin: 0.5rem 0 1rem; }
+.post-content .elementor ul, .post-content .elementor ol { margin: 0.5rem 0 1.25rem 1.25rem; }
+.post-content .elementor img, .post-content .elementor video { max-width: 100%; height: auto; border-radius: 6px; }
+.post-content .elementor .elementor-widget-image, 
+.post-content .elementor .elementor-widget-video, 
+.post-content .elementor .elementor-widget-text-editor,
+.post-content .elementor .elementor-widget-image-box,
+.post-content .elementor .elementor-widget-heading,
+.post-content .elementor .elementor-widget-testimonial { margin-bottom: var(--gap); }
+.post-content .elementor .elementor-image-box-title { margin: 0 0 .25rem; }
+.post-content .elementor .elementor-image-box-description { margin: 0; }
+.post-content .elementor .elementor-testimonial-wrapper { background: var(--entry); padding: 1rem; border-radius: 8px; }
+.post-content .elementor a { color: var(--primary); }
+
+/* Center hero */
+.post-content .elementor .elementor-12 .elementor-widget-heading { text-align: center; }
+.post-content .elementor .elementor-12 .elementor-widget-video { display: flex; justify-content: center; }
+
+/* PaperMod color tuning to approximate brand */
+:root {
+  --primary: #0A5BD8; /* accent */
+}

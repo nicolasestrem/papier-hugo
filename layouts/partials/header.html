@@ -1,0 +1,16 @@
+<header class="site-header sticky" role="banner">
+  <div class="container">
+    <a class="brand" href="{{ "" | absLangURL }}">{{ site.Title }}</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Menu">☰</button>
+    <nav class="main-nav" role="navigation">
+      <ul id="menu">
+        {{- range site.Menus.main }}
+          <li>
+            <a href="{{ .URL }}" {{ if or (eq .URL ("" | absLangURL)) ( .Page ) }}class="{{ if or (.Page.IsMenuCurrent "main" .) (.Page.HasMenuCurrent "main" .) }}active{{ end }}"{{ end }}>{{ .Name }}</a>
+          </li>
+        {{- end }}
+      </ul>
+    </nav>
+  </div>
+</header>
+

@@ -1,0 +1,75 @@
+/* Base brand from Elementor export (site-settings.json) */
+:root {
+  --brand-primary: #0067C8;
+  --brand-secondary: #00A2E0;
+  --brand-accent: #F7A81B;
+  --brand-text: #7A7A7A;
+}
+
+/* PaperMod container fallback */
+.post-content { max-width: 1100px; margin: 0 auto; padding: 1rem 1.25rem; }
+
+/* Typography */
+body { font-family: 'Lato', Tahoma, Verdana, Segoe UI, Arial, sans-serif; color: var(--brand-text); }
+h1, h2, h3, h4, h5 { font-family: 'Poppins', 'Lato', system-ui, sans-serif; color: var(--brand-accent); margin: .5rem 0 .75rem; line-height: 1.2; }
+h1 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+h2 { font-size: clamp(1.4rem, 2.2vw, 1.8rem); }
+p { margin: .5rem 0 1rem; }
+a { color: var(--brand-secondary); }
+a:hover { color: var(--brand-accent); }
+img, video { max-width: 100%; height: auto; border-radius: 6px; }
+ul, ol { margin: .5rem 0 1.25rem 1.25rem; }
+
+/* Elementor content minimal styling */
+.post-content .elementor { --gap: 1.25rem; }
+.post-content .elementor .e-con-inner { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+.post-content .elementor .elementor-widget-image,
+.post-content .elementor .elementor-widget-video,
+.post-content .elementor .elementor-widget-text-editor,
+.post-content .elementor .elementor-widget-image-box,
+.post-content .elementor .elementor-widget-heading,
+.post-content .elementor .elementor-widget-testimonial { margin-bottom: var(--gap); }
+.post-content .elementor .elementor-image-box-title { margin: 0 0 .25rem; }
+.post-content .elementor .elementor-image-box-description { margin: 0; }
+.post-content .elementor .elementor-testimonial-wrapper { background: #f6f6f6; padding: 1rem; border-radius: 8px; }
+.post-content .elementor a { color: var(--brand-secondary); }
+.post-content .elementor a:hover { color: var(--brand-accent); }
+
+/* Hero alignment tweaks */
+.post-content .elementor .elementor-12 .elementor-widget-heading { text-align: center; }
+.post-content .elementor .elementor-12 .elementor-widget-video { display: flex; justify-content: center; }
+
+/* Header/menu styling (custom sticky header) */
+.site-header { position: sticky; top: 0; z-index: 50; background: #fff; border-bottom: 3px solid rgba(0,0,0,0.04); box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.site-header .container { max-width: 1100px; margin: 0 auto; padding: .5rem 1rem; display: flex; align-items: center; gap: 1rem; }
+.site-header .brand { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.125rem; color: var(--brand-primary); text-decoration: none; }
+.site-header .main-nav { margin-left: auto; }
+#menu { display: flex; gap: .25rem; align-items: center; margin: 0; padding: 0; }
+#menu li { list-style: none; }
+#menu li a { display: inline-block; padding: .4rem .6rem; color: var(--brand-primary); font-weight: 600; border-radius: 6px; text-decoration: none; }
+#menu li a:hover { background: rgba(0,103,200,.08); }
+#menu li a.active { color: var(--brand-accent); }
+.nav-toggle { display: none; margin-left: auto; font-size: 1.25rem; background: var(--brand-primary); color: #fff; border: 0; border-radius: 6px; padding: .2rem .5rem; }
+@media (max-width: 800px) {
+  .nav-toggle { display: inline-block; }
+  .site-header .main-nav { display: none; width: 100%; }
+  .site-header[aria-expanded="true"] .main-nav { display: block; }
+  #menu { flex-direction: column; align-items: flex-start; padding: .5rem 0; }
+}
+
+/* Tiny slider for Elementor carousel markup */
+.elementor-widget-media-carousel { position: relative; }
+.elementor-widget-media-carousel .swiper-wrapper { display: block; position: relative; min-height: 200px; }
+.elementor-widget-media-carousel .swiper-slide { display: none; }
+.elementor-widget-media-carousel .swiper-slide.is-active { display: block; }
+.elementor-swiper-button { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,.4); color: #fff; padding: .35rem; border-radius: 50%; cursor: pointer; }
+.elementor-swiper-button svg { fill: #fff; }
+.elementor-swiper-button-prev { left: .5rem; }
+.elementor-swiper-button-next { right: .5rem; }
+.elementor-widget-media-carousel img { width: 100%; height: auto; object-fit: cover; }
+
+/* Hero polish (Elementor home top container) */
+.elementor-12 .elementor-element-2b523ee { padding: 1.25rem 0 0; }
+.elementor-12 .elementor-element-56f9e67 h1 { margin-bottom: .25rem; }
+.elementor-12 .elementor-element-9938344 h2 { color: var(--brand-primary); margin-top: 0; }
+.elementor-12 .elementor-element-98fa360 { padding: .75rem 0 1rem; }

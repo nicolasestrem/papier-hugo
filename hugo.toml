@@ -1,0 +1,29 @@
+baseURL = 'https://championnatavionpapier.fr/'
+languageCode = 'fr-FR'
+defaultContentLanguage = 'fr'
+title = "Championnat du Monde de lancer d’Avions en Papier"
+theme = 'PaperMod'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = 'Accueil'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    name = 'Contact – FAQ'
+    url = '/contact-faq/'
+    weight = 2
+  [[menu.main]]
+    name = 'Rotary Mérignac'
+    url = 'https://www.rotary-merignac.fr/'
+    weight = 3
+
+[params]
+  defaultTheme = 'light'
+  disableThemeToggle = true
+  description = "Championnat du Monde de lancer d'avions en papier à Mérignac"
