@@ -5,3 +5,5 @@ public/
 resources/
 node_modules/
 *.log
+# Large media not tracked in Git
+static/wp-content/uploads/**/*.mp4
